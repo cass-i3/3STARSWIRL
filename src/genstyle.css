@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+* {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: whitesmoke;
+}
+
+.italics {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+body {
+    /* gradient */
+    background: rgb(85,3,3);
+    background: -moz-linear-gradient(180deg, rgba(85,3,3,1) 0%, rgba(78,4,31,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(85,3,3,1) 0%, rgba(78,4,31,1) 100%);
+    background: linear-gradient(180deg, rgba(85,3,3,1) 0%, rgba(78,4,31,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#550303",endColorstr="#4e041f",GradientType=1);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+div.flexbox {
+    /* flexbox */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+div.specflex {
+    display: flex;
+    justify-content: center;
+}
+
+div.contbox {
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: auto;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+}
+
+p.title {
+    font-size: 1.8rem;
+}
+
+br {
+    content: '\A';
+    display: contents;
+    white-space: pre;
+}
+
+.contbox > div:not(.ex) {
+    text-align: center;
+}
+
+.ex {
+    text-indent: 1em;
+}
+
+.nob {
+    list-style-type: none;
+}
